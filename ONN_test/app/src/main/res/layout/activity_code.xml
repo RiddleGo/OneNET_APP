@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Code"
+    android:orientation="vertical"
+    >
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--其他元素-->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/maincolor"
+        android:layout_width="match_parent"
+        app:titleTextColor="#fff"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数值显示"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="66px"
+            android:textStyle="bold"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="677dp"
+
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <!-- 第一层-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="66dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Value:" />
+
+                    <TextView
+                        android:id="@+id/node01Val"
+                        android:layout_width="120dp"
+                        android:textStyle="bold"
+                        android:layout_height="30dp"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Time: " />
+
+                    <TextView
+                        android:id="@+id/node01Time"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:inputType="time" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Node01"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Value:" />
+
+                    <TextView
+                        android:id="@+id/node02Val"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Time: " />
+
+                    <TextView
+                        android:id="@+id/node02Time"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:inputType="time" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Node02"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 第二层-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="66dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Value:" />
+
+                    <TextView
+                        android:id="@+id/node03Val"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Time: " />
+
+                    <TextView
+                        android:id="@+id/node03Time"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:inputType="time" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Node03"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Value:" />
+
+                    <TextView
+                        android:id="@+id/node04Val"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Time: " />
+
+                    <TextView
+                        android:id="@+id/node04Time"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:inputType="time" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Node04"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 第三层-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="66dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Value:" />
+
+                    <TextView
+                        android:id="@+id/node05Val"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Time: " />
+
+                    <TextView
+                        android:id="@+id/node05Time"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:inputType="time" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Node05"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Value:" />
+
+                    <TextView
+                        android:id="@+id/node06Val"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Time: " />
+
+                    <TextView
+                        android:id="@+id/node06Time"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:inputType="time" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Node06"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/more_node"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="更多节点"
+            android:textColor="@color/maincolor"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

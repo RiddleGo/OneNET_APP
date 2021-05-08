@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.More"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/maincolor"
+        android:layout_width="match_parent"
+        app:titleTextColor="#fff"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多选择"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="66px"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/superLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多请访问https://www.uestc.edu.cn/"
+            android:textSize="22dp">
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
